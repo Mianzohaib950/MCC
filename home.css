@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --bs-primary-color: #f48a97;
+    --bs-forms-bgcolor: #FEEFEC;
+    --bs-secondprimary-color: #33a8b9;
+}
+
+body {
+    background-image: url(../Images/rainbow-background.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+/* Home page */
+
+.category {
+    margin-top: 8%;
+    padding: 4% 0 6%;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 80%;
+    border-radius: 30px;
+}
+
+.category button {
+    background-color: var(--bs-primary-color);
+    border: 1px var(--bs-primary-color) solid;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 3px;
+    margin: 0 2rem;
+    height: 4rem;
+    width: 12rem;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.category button:hover {
+    transform: translateY(0) scale(1.2);
+    transition: all 500ms ease-in-out;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    z-index: 100;
+    -webkit-animation: scale 1s linear;
+    -moz-animation: scale 1s linear;
+    animation: scale 1s linear;
+    transform-origin: 50% 50%;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1.0);
+    }
+
+    100% {
+        transform: scale(1.1);
+        -webkit-box-shadow: 10px 10px 60px 10px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 10px 10px 60px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 10px 10px 60px 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@keyframes scaledown {
+    0% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+.emojis h1,
+.category h1 {
+    text-transform: uppercase;
+    color: var(--bs-secondprimary-color);
+    text-shadow: 1px 1px 2px black, 0 0 25px #f70723, 0 0 5px #f48a97;
+}
+
+/* Mood Express Emojis */
+
+.emojis a,
+.gametype a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.emojis {
+    margin-top: 6%;
+    padding: 2% 0 4%;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 80%;
+    border-radius: 30px;
+}
+
+.emojis a img {
+    height: 6rem;
+}
+
+.emojis a img:hover {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: flip;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s;
+}
+
+.emojis a p {
+    color: #2ca1c1;
+    outline: black;
+}
+
+.gamecategory {
+    margin-top: 8%;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 70%;
+    border-radius: 30px;
+}
+
+.gametype .puzzle {
+    background-color: white;
+}
+
+.gametype img {
+    width: 60%;
+    border-radius: 50%;
+}

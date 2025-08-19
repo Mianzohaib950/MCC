@@ -1,0 +1,268 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --bs-primary-color: #f48a97;
+    --bs-forms-bgcolor: #FEEFEC;
+    --bs-secondprimary-color: #33a8b9;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* padding-top: 15%; */
+    background: url(../Images/rainbow-background.jpg) no-repeat center;
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+}
+
+.logo img {
+    height: 12rem;
+}
+
+/* Navbar */
+
+.navbar .coin {
+    height: 5rem;
+}
+
+.navbar a .userdp,
+.nav-item .logout {
+    height: 4rem;
+}
+
+/* Css for forms globally */
+
+.formbackground {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 60%;
+    border-radius: 30px;
+}
+
+.formbackground a {
+    text-decoration: none;
+}
+
+.formbackground form {
+    width: 80%;
+}
+
+.formbackground form input {
+    border: 2px rgb(155, 176, 143, 0.5) solid;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+}
+
+.formbackground form .form-check-input {
+    width: 1em;
+    padding: 0;
+}
+
+.form-floating>label {
+    color: #636c72;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: rgba(0, 0, 0, 0.1);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(83 83 83 / 25%);
+}
+
+.formbackground button {
+    background-color: var(--bs-primary-color);
+    border: 1px var(--bs-primary-color) solid;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 12px 0;
+    color: white;
+    font-size: larger;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Verfication form css */
+
+.verificationform .code {
+    height: 4rem;
+    width: 5rem;
+    background-color: #FEEFEC;
+}
+
+.verificationform .content .row {
+    gap: 4rem;
+}
+
+.verificationform .content {
+    width: 80%;
+}
+
+/* Register child */
+
+/* .registerchild .name,
+.registerchild .age {
+    width: 5rem;
+} */
+
+.moji {
+    font-size: 4em;
+    text-align: center;
+}
+
+.slider input {
+    width: 100%;
+    margin: 0 10px;
+}
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+}
+
+span {
+    font-weight: bold;
+    color: #5fcf80;
+}
+
+span:last-child {
+    color: tomato;
+}
+
+/* gender box */
+.gender input[type="radio"] {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+
+.gender .center-align label {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    border: 1px var(--bs-secondprimary-color) solid;
+    color: black;
+    ;
+    padding: 10px 2rem;
+    border-radius: 3px;
+}
+
+.gender input[type="radio"]:checked+label {
+    background-color: var(--bs-secondprimary-color);
+}
+
+
+
+/* Bootstrap modal */
+
+/* .modal-content {
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+} */
+
+.modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.modal-dialog {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+}
+
+.modal .modal-content {
+    padding: 70px 30px;
+    border-radius: 20px;
+    -webkit-animation-name: modal-animation;
+    -webkit-animation-duration: 0.5s;
+    animation-name: modal-animation;
+    animation-duration: 0.5s;
+}
+
+.modal-body h1 {
+    text-transform: uppercase;
+    color: #76ba26;
+    font-weight: 400;
+}
+
+.error h1 {
+    color: red;
+}
+
+/* .show {
+    display: block;
+} */
+
+
+/* User Login */
+
+.selectuser {
+    position: relative;
+    width: 500px;
+    margin: 15px auto;
+    border-radius: 30px;
+    background: gray;
+    padding: 0;
+}
+
+.selectuser .toggle-btn {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 60px;
+    outline: none;
+    border: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: .02em;
+    color: white;
+    background: transparent;
+    box-shadow: none;
+}
+
+#btn {
+    top: 0;
+    position: absolute;
+    width: 250px;
+    height: 100%;
+    background: var(--bs-secondprimary-color);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 250px;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 991.98px) {
+    .formbackground {
+        width: 80%;
+    }
+
+    .verificationform .code {
+        height: 3.5rem;
+        width: 4rem;
+    }
+}

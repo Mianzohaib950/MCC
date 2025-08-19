@@ -1,0 +1,13 @@
+.card-width {
+    width: 18rem;
+}
+
+.card-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.campingh1 {
+    margin-left: 35%;
+}
